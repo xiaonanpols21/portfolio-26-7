@@ -1,5 +1,6 @@
 $black: #000;
 $white: #EEEBE5;
+$white-f: #fff;
 
 $primaire: #2248A2;
 $secundaire: #EB51A0;
@@ -8,10 +9,21 @@ $primaire-stroke: #00123C;
 
 $trans-basic: .4s;
 
+@mixin f16 {
+    font-size: 1rem;
+    line-height: 1.75rem;
+}
+
 @mixin f18 {
     font-size: 1.125rem;
     line-height: 1.875rem;
 }
+
+@mixin f58 {
+    font-size: 3.625rem;
+    line-height: 4.313rem;
+}
+
 
 @mixin flex($direction, $gap) {
     display: flex;

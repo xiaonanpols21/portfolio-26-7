@@ -15,10 +15,61 @@ ul li {
 	list-style: none;
 }
 
+p {
+	@include f16;
+}
+
+img {
+	width: 100%;
+	object-fit: cover;
+}
+
+body {
+	background-color: $white;
+}
+
 .btn-1 {
 	padding: 10px 20px;
 	background-color: $primaire;
 	border-radius: 20px;
 	border: 2px solid $primaire-stroke;
 	color: $white;
+}
+
+.wrapper {
+	max-width: 500px;
+	margin: auto
+}
+
+// Hero
+.hero {
+	@include flex(column, 30px);
+	padding: 20px;
+
+	h1 {
+		@include f58;
+	}
+}
+
+.main {
+	.card-list {
+		@include flex(column, 40px);
+		padding: 20px;
+	}
+}
+
+// Breakpoints
+@media (min-width: 768px) { 
+    p {
+		@include f18;
+	}
+
+	.wrapper {
+		max-width: 100%;
+	}
+
+	.main .card-list {
+		flex-direction: row;
+		overflow-x: auto;
+	}
 }

@@ -1,0 +1,9 @@
+@use "../../styles/variables" as *;
+
+.tag {
+    padding: 5px 20px;
+    width: fit-content;
+    background-color: $secundaire;
+    border-radius: 50px;
+    color: $white;
+}
