@@ -1,10 +1,23 @@
 @use "../../styles/variables" as *;
+.wrapperHeader {
+    &:has(label input:checked) {
+		.openMenu {
+			display: block;
+            
+            @media (min-width: 768px) {
+				display: none;
+			}
+		}
+	}
+}
 
 .header {
     @include f18;
     @include flex(row, 0px);
+    position: relative;
     justify-content: space-between;
     padding: 30px 20px 20px 20px;
+    z-index: 1;
 }
 
 .logo {
@@ -21,6 +34,28 @@
 
 .desktopNav ul {
     @include flex(row, 50px);
+    display: none;
+}
+
+.mobileNav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: $white;
+    padding: 50px;
+
+    ul {
+        @include flex(column, 50px);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -100%);
+    }
+}
+
+.openMenu {
     display: none;
 }
 
