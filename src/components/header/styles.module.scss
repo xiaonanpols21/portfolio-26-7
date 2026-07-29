@@ -1,0 +1,31 @@
+@use "../../styles/variables" as *;
+
+.header {
+    @include f18;
+    @include flex(row, 0px);
+    justify-content: space-between;
+    padding: 30px 20px 20px 20px;
+}
+
+.logo {
+    font-weight: bold;
+
+    &::before {
+        content: "{";
+    }
+
+    &::after {
+        content: "}";
+    }
+}
+
+.desktopNav ul {
+    @include flex(row, 50px);
+    display: none;
+}
+
+@media (min-width: 768px) { 
+    .desktopNav ul {
+        display: flex;
+    }
+}

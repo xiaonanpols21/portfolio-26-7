@@ -1,0 +1,26 @@
+$black: #000;
+$white: #EEEBE5;
+
+$primaire: #2248A2;
+$secundaire: #EB51A0;
+
+$primaire-stroke: #00123C;
+
+$trans-basic: .4s;
+
+@mixin f18 {
+    font-size: 1.125rem;
+    line-height: 1.875rem;
+}
+
+@mixin flex($direction, $gap) {
+    display: flex;
+    flex-direction: $direction;
+    gap: $gap;
+}
+
+@mixin hideInput {
+    position: absolute;
+    opacity: 0;
+    pointer-events: all;
+}
