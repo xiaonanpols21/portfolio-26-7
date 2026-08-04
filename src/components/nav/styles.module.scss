@@ -2,4 +2,8 @@
 
 .nav {
     font-weight: bold;
+
+    ul li:first-of-type a {
+        @include hover-basic;
+    }
 }

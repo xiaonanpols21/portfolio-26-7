@@ -36,3 +36,11 @@ $trans-basic: .4s;
     opacity: 0;
     pointer-events: all;
 }
+
+@mixin hover-basic {
+    transition: $trans-basic;
+
+    &:hover {
+        color: $secundaire;
+    }
+}

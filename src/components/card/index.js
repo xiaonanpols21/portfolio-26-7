@@ -6,6 +6,7 @@ import styles from "./styles.module.scss";
 export default function Card() {
     return (
         <article className={styles.card}>
+            <div className={styles.clip}></div>
             <Link href="">
                 <h2>Shift savy</h2>
                 <p>De jonge supermarktmedewerkers motiveren om extra te gaan werken.</p>

@@ -1,5 +1,8 @@
 @use "../../styles/variables" as *;
 .wrapperHeader {
+    max-width: 1300px;
+    margin: auto;
+    
     &:has(label input:checked) {
 		.openMenu {
 			display: block;
@@ -21,6 +24,7 @@
 }
 
 .logo {
+    @include hover-basic;
     font-weight: bold;
 
     &::before {

@@ -8,6 +8,7 @@ export default function Home() {
                 <p>Een creatieve front-end developer met oog voor design waarbij toegankelijkheid belangrijk is voor iedereen!</p>
             </section>
             <main className="main">
+                <div className="divider"></div>
                 <ul className="card-list">
                     <li>
                         <Card/>
