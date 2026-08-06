@@ -1,25 +1,11 @@
 "use client";
-import { useEffect, useState } from "react";
+import useIsMobile from "@/app/js/useIsMobile";
 import Card from "@/components/card";
 import Swiper from "@/components/swiper";
 import styles from "./styles.module.scss";
 
 export default function Main() {
-    const [isMobile, setIsMobile] = useState(false);
-
-    useEffect(() => {
-    function handleResize() {
-        setIsMobile(window.innerWidth < 768);
-    }
-
-    handleResize(); // Controleer direct bij het laden
-
-    window.addEventListener("resize", handleResize);
-
-    return () => {
-        window.removeEventListener("resize", handleResize);
-    };
-    }, []);
+    const isMobile = useIsMobile();
 
     return (
         <main className={styles.main}>

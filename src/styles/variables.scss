@@ -24,10 +24,20 @@ $trans-basic: .4s;
     line-height: 4.313rem;
 }
 
+@mixin max-width {
+    max-width: 1300px;
+    margin: auto;
+}
 
 @mixin flex($direction, $gap) {
     display: flex;
     flex-direction: $direction;
+    gap: $gap;
+}
+
+@mixin grid($clmn, $gap) {
+    display: grid;
+    grid-template-columns: $clmn;
     gap: $gap;
 }
 

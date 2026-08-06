@@ -13,22 +13,23 @@
         &:hover img {
             scale: 1.1;
         }
+
+        div {
+            order: -1;
+            overflow: hidden;
+            height: 180px;
+            border: 1px solid $black;
+            border-radius: 20px;
+        }
     }
 
     img {
-        order: -1;
         transition: $trans-basic;
 
     }
 
     h2 {
         margin-bottom: -10px;
-    }
-
-    div {
-        overflow: hidden;
-        border: 1px solid $black;
-        border-radius: 20px;
     }
 }
 

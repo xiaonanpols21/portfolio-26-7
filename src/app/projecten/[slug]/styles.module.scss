@@ -1,0 +1,11 @@
+@use "../../../styles/variables" as *;
+
+.project {
+    @include max-width;
+}
+
+@media (min-width: 768px) {
+    .project {
+        @include grid(1fr 1fr, 50px);
+    }
+}
