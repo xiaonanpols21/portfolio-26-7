@@ -9,16 +9,26 @@
 
     a {
         @include flex(column, 20px);
+
+        &:hover img {
+            scale: 1.1;
+        }
     }
 
     img {
         order: -1;
-        border: 1px solid $black;
-        border-radius: 20px;
+        transition: $trans-basic;
+
     }
 
     h2 {
         margin-bottom: -10px;
+    }
+
+    div {
+        overflow: hidden;
+        border: 1px solid $black;
+        border-radius: 20px;
     }
 }
 

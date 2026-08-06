@@ -10,12 +10,14 @@ export default function Card() {
             <Link href="">
                 <h2>Shift savy</h2>
                 <p>De jonge supermarktmedewerkers motiveren om extra te gaan werken.</p>
-                <Image
-                    src="/img/deka.webp"
-                    width={380}
-                    height={178}
-                    alt="Project"
-                />
+                <div>
+                    <Image
+                        src="/img/deka.webp"
+                        width={380}
+                        height={178}
+                        alt="Project"
+                    />
+                </div>
 
                 <ul className={styles.tags}>
                     <Tag/>
